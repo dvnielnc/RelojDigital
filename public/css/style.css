@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #FAA65B;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .reloj {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  #alarmas {
+    text-align: center;
+  }
+  
+  #mostrar-formulario-boton,
+  button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #FAA65B;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #mostrar-formulario-boton:hover,
+  button:hover {
+    background-color: #FAA65B;
+    color: azure;
+  }
+  
+  #formulario-alarma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  #formulario-alarma input[type="time"],
+  #formulario-alarma input[type="text"] {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  #lista-alarmas {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  #lista-alarmas li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #lista-alarmas button {
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #lista-alarmas button:hover {
+    background-color: #ff1a1a;
+    color: azure;
+  }
+  

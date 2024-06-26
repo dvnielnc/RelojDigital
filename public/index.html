@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Reloj Digital</h1>
+  <div id="reloj" class="reloj">00:00:00</div>
+
+  <div id="alarmas">
+    <h2>Alarmas</h2>
+    <ul id="lista-alarmas"></ul>
+    <button id="mostrar-formulario-boton">Agregar Alarma</button>
+    <form id="formulario-alarma" style="display: none;">
+      <input type="time" id="hora-alarma" required>
+      <input type="text" id="etiqueta-alarma" placeholder="Descripción">
+      <button type="submit">Añadir Alarma</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
