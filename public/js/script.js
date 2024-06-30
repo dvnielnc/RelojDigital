@@ -51,7 +51,7 @@ function añadirAlarmaALista(alarma) {
   li.dataset.id = alarma.id;
 
   const botonEliminar = document.createElement('button');
-  botonEliminar.textContent = 'Eliminar';
+  botonEliminar.textContent = '';
   botonEliminar.addEventListener('click', function() {
     fetch(`/api/alarms/${alarma.id}`, {
       method: 'DELETE'
@@ -99,7 +99,7 @@ function verificarAlarmas() {
 // Función para mostrar notificación tipo alert con la descripción de la alarma
 function mostrarNotificacion(etiqueta) {
   // Mostrar alerta con la descripción de la alarma
-  console.log(`¡Alarma!\nEs hora de "${etiqueta}"`);
+  alert(`¡Alarma!\nEs hora de "${etiqueta}"`);
 }
 
 // Iniciar la carga de alarmas al cargar la página
